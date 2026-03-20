@@ -1,0 +1,12 @@
+/* General body font */
+body {
+  font-family: 'Lato', sans-serif;
+  /* Note: Background color and text color are primarily handled by Tailwind utility classes in index.html (e.g., class="bg-[#15232D] text-white").
+     These can remain there, or be explicitly set here if a global override is preferred over Tailwind utilities for these base styles.
+     For now, just setting font-family to keep changes focused on fonts. */
+}
+
+/* Heading font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
