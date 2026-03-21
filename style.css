@@ -9,10 +9,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* Heading font */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-}
 
 /* Navigation bar styling */
 .navbar {
@@ -38,3 +34,8 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: bold;
 }
+  /* Heading font */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
