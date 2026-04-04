@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogicCore</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="navbar-container">
-        <a href="#" class="logo">
-            <img src="imagens_site/logo.png" alt="LogicCore Logo">
-            logicCore
-        </a>
 
-        <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="imagens_site/logo.png" alt="LogicCore Logo">
+                logicCore
+            </a>
 
-        <div class="nav-menu" id="nav-menu">
-            <ul class="nav-links">
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <ul class="nav-menu">
                 <li><a href="#" class="active">Início</a></li>
                 <li><a href="#">Nosso Produto</a></li>
-
-                <li class="dropdown" id="dropdown">
-                    <div class="dropdown-toggle">Sobre nós</div>
+                <li class="dropdown">
+                    <a href="#">Sobre nós</a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Nossa História</a></li>
                         <li><a href="#">Depoimentos</a></li>
                     </ul>
                 </li>
-
                 <li><a href="#">Contato</a></li>
             </ul>
         </div>
-    </div>
-</nav>
-  <header>
-    <h1>Bem Vindo a nossa Empresa LogicCore</h1>
-    <p>Nossa empresa desenvolve sistema para auxiliar na produção industrial.</p>
-  </header>
+    </nav>
 
+ 
+    <header>
+        <h1>Bem Vindo a nossa Empresa LogicCore</h1>
+        <p>Nossa empresa desenvolve sistema para auxiliar na produção industrial.</p>
+    </header>
 
-  <section class="services">
-    <h2>Nossos Serviços</h2>
-    <ul>
-      <li>Desenvolvimento de Software Personalizado</li>
-      <li>Automação Industrial</li>
-      <li>Consultoria em Tecnologia da Informação</li>
-      <li>Suporte Técnico e Manutenção</li>
-    </ul>
-  </section>
+    <section class="services">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Desenvolvimento de Software Personalizado</li>
+            <li>Automação Industrial</li>
+            <li>Consultoria em Tecnologia da Informação</li>
+            <li>Suporte Técnico e Manutenção</li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 LogicCore. Todos os direitos reservados.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 LogicCore. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Menu mobile toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Fechar menu mobile ao clicar em um link
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
