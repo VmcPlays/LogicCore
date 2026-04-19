@@ -1,6 +1,4 @@
-/* ========== GLOBAL.CSS ========== */
-/* Tudo que é COMPARTILHADO entre TODAS as páginas */
-
+/* CSS global para todas as páginas */
 :root {
     --primary-color: #080a69;
     --secondary-color: #ffffff;

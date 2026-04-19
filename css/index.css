@@ -18,7 +18,7 @@ header p {
     opacity: 0.9;
 }
 
-/* Seção de Serviços (só aparece na home) */
+/* Serviços*/
 .services {
     max-width: 1200px;
     margin: 2rem auto;
@@ -35,7 +35,8 @@ header p {
 }
 
 .services ul {
-    list-style: none;
+       padding-left: 20px;
+    list-style-type: circle;
 }
 
 .services li {
@@ -49,7 +50,6 @@ header p {
 }
 
 .services li::before {
-    content: "✓";
     color: var(--primary-color);
     margin-right: 0.8rem;
     font-weight: bold;
